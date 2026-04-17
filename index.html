@@ -7,19 +7,19 @@
   <link rel="icon" type="image/png" href="http://static1.squarespace.com/static/5f7e35de2f51e72b1a920e44/t/68bafa74311b5f31d47ba7df/1767303411506/mammoth+square+copy.jpg?format=1500w" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lato:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant%20Garamond:wght@300;400;500;600;700;800&family=Larsseit:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --primary: #333333;
-      --primary-dark: #2b2b2b;
-      --primary-deeper: #242424;
-      --dark: #232323;
-      --highlight: #FFC107;
-      --bg-light: #3d3d3d;
-      --bg-subtle: #4f4f4f;
-      --bg-page: #202020;
-      --bg-card: #353535;
-      --bg-card-hover: #424242;
+      --primary: #F5F4F0;
+      --primary-dark: #d0cfcc;
+      --primary-deeper: #acaba8;
+      --dark: #000000;
+      --highlight: #A13322;
+      --bg-light: #1f1f1f;
+      --bg-subtle: #333333;
+      --bg-page: #000000;
+      --bg-card: #141414;
+      --bg-card-hover: #242424;
       --white: #FFFFFF;
       --text-primary: #ffffff;
       --text-mid: rgba(255,255,255,0.82);
@@ -31,17 +31,17 @@
       --on-dark-muted: rgba(255,255,255,0.15);
       --border: rgba(255,255,255,0.14);
       --border-strong: rgba(255,255,255,0.25);
-      --tag-bg: #33333333;
-      --tag-color: #707070;
+      --tag-bg: #F5F4F033;
+      --tag-color: #f8f7f5;
       --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
       --shadow-md: 0 8px 30px rgba(0,0,0,0.5);
       --radius: 14px;
-      --font-heading: 'Montserrat', sans-serif;
-      --font-body: 'Lato', sans-serif;
+      --font-heading: 'Cormorant Garamond', sans-serif;
+      --font-body: 'Larsseit', sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Lato', 'Montserrat', sans-serif; font-size: 16px; color: var(--text-dark); background: var(--bg-page); line-height: 1.6; }
+    body { font-family: 'Larsseit', 'Cormorant Garamond', sans-serif; font-size: 16px; color: var(--text-dark); background: var(--bg-page); line-height: 1.6; }
 
     .site-header { background: var(--bg-card); padding: 0 32px; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-sm); border-bottom: 1px solid var(--border); }
     .header-inner { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
@@ -52,7 +52,7 @@
     .header-sagan { display: flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-size: 12px; font-weight: 600; color: var(--text-mid); letter-spacing: 0.03em; text-transform: uppercase; }
 
     .hero { background: linear-gradient(145deg, var(--dark) 0%, var(--primary-deeper) 40%, var(--primary) 100%); color: var(--white); padding: 72px 32px 64px; text-align: center; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, #FFC1071a 0%, transparent 70%); border-radius: 50%; }
+    .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, #A133221a 0%, transparent 70%); border-radius: 50%; }
     .hero-eyebrow { display: inline-block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 6px 18px; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 22px; color: var(--highlight); }
     .hero h1 { font-family: var(--font-heading); font-size: clamp(30px, 5vw, 48px); font-weight: 800; line-height: 1.15; max-width: 720px; margin: 0 auto 16px; letter-spacing: -0.02em; }
     .hero-sub { font-size: 18px; color: var(--on-dark-mid); max-width: 620px; margin: 0 auto 36px; font-weight: 400; line-height: 1.6; }
@@ -87,17 +87,17 @@
 
     .candidate-card { max-width: 1100px; margin: 0 auto 40px; padding: 0 40px; }
     .card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-md); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
-    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 40px rgba(0,0,0,0.4); border-color: #33333333; }
-    .card.featured { border-color: #33333355; box-shadow: 0 4px 32px #3333331a; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 40px rgba(0,0,0,0.4); border-color: #F5F4F033; }
+    .card.featured { border-color: #F5F4F055; box-shadow: 0 4px 32px #F5F4F01a; }
     .card-top { background: var(--dark); padding: 36px 44px; display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); }
     .card-identity { display: flex; align-items: center; gap: 20px; }
-    .card-avatar { width: 60px; height: 60px; border-radius: 50%; background: #33333326; border: 2px solid #3333334d; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; color: var(--primary); flex-shrink: 0; font-family: var(--font-heading); }
+    .card-avatar { width: 60px; height: 60px; border-radius: 50%; background: #F5F4F026; border: 2px solid #F5F4F04d; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; color: var(--primary); flex-shrink: 0; font-family: var(--font-heading); }
     .card-avatar.featured-avatar { background: var(--primary); border-color: var(--primary); color: var(--dark); }
     .card-name { font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: var(--on-dark); margin-bottom: 4px; }
     .card-location { font-size: 14px; color: var(--on-dark-mid); display: flex; align-items: center; gap: 6px; }
     .card-badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; }
-    .badge-shortlisted { background: #33333333; color: var(--primary); border: 1px solid #33333366; }
+    .badge-shortlisted { background: #F5F4F033; color: var(--primary); border: 1px solid #F5F4F066; }
     .card-rate { text-align: right; }
     .card-rate-amount { font-size: 24px; font-weight: 700; color: var(--primary); font-family: var(--font-heading); }
     .card-rate-period { font-size: 11px; color: var(--on-dark-mid); text-transform: uppercase; letter-spacing: 1px; }
@@ -120,14 +120,14 @@
     .exp-item { display: flex; gap: 16px; align-items: flex-start; }
     .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 6px; }
     .exp-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); flex-shrink: 0; }
-    .exp-line { width: 1px; flex: 1; background: #33333333; margin-top: 6px; min-height: 30px; }
+    .exp-line { width: 1px; flex: 1; background: #F5F4F033; margin-top: 6px; min-height: 30px; }
     .exp-content { flex: 1; padding-bottom: 4px; }
     .exp-role { font-size: 15px; font-weight: 600; color: var(--text-primary); }
     .exp-company { font-size: 13px; color: var(--text-light); margin-top: 2px; }
     .exp-highlight { font-size: 13px; color: var(--primary); margin-top: 4px; }
     .tags-cluster { display: flex; flex-wrap: wrap; gap: 8px; }
     .ctag { font-size: 12px; padding: 6px 14px; border-radius: 6px; background: var(--bg-subtle); color: var(--text-mid); }
-    .ctag-key { background: #3333331a; color: var(--primary); font-weight: 600; }
+    .ctag-key { background: #F5F4F01a; color: var(--primary); font-weight: 600; }
     .fit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
     .fit-item { background: var(--bg-subtle); padding: 14px 16px; border-radius: 8px; border: 1px solid var(--border-strong); overflow: visible; word-wrap: break-word; }
     .fit-label { font-size: 12px; color: var(--text-mid); line-height: 1.5; display: block; overflow: visible; white-space: normal; }
@@ -171,7 +171,7 @@
     .comparison-table tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
     .comparison-table tbody tr:last-child td { border-bottom: none; }
     .comparison-table tbody tr:hover { background: var(--bg-card-hover); }
-    .comparison-table .highlight-cell { background: #3333331a; font-weight: 600; color: var(--primary); }
+    .comparison-table .highlight-cell { background: #F5F4F01a; font-weight: 600; color: var(--primary); }
 
     .advisor-section { max-width: 1100px; margin: 0 auto 40px; padding: 0 40px; }
     .advisor-card { display: flex; gap: 24px; background: var(--bg-card); border-radius: 16px; padding: 28px; box-shadow: var(--shadow-md); border: 1px solid var(--border); }
@@ -223,11 +223,11 @@
     <div class="hero-meta">
       <div class="hero-meta-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <strong>2</strong> Candidates
+        <strong>1</strong> Candidates
       </div>
       <div class="hero-meta-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        <strong>Batch 2</strong> &middot; April 17, 2026
+        <strong>Batch 1</strong> &middot; April 17, 2026
       </div>
       <div class="hero-meta-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -237,10 +237,15 @@
   </section>
 
   
+  <div class="intro-note">
+    <div class="intro-card">
+      <p>Hi Maryana,</p><p>Here is our first batch of candidates for the Marketing and Communications Manager role, selected specifically because they are independent, senior &quot;doers&quot; who can immediately take these tasks completely off your plate. They stood out to me because they have solid design industry knowledge and provided flawless PR and SEO writing samples that prove they won't need any hand-holding. Please review them and share your thoughts so we can either get those 15-minute intro calls scheduled or quickly adjust our search before you need to make a decision on your local fallback candidate.</p>
+    </div>
+  </div>
 
   <div class="batch-info">
     <div class="batch-pill">
-      <span class="batch-num">Batch 2</span>
+      <span class="batch-num">Batch 1</span>
       April 17, 2026
     </div>
   </div>
@@ -251,25 +256,25 @@
   </div>
 
   <div class="batch-switcher" id="batch-switcher" data-count="1">
-    <button class="batch-btn active" onclick="showBatch(2)" data-batch="2">
-      <span>Batch 2</span>
-      <span class="batch-count">2</span>
+    <button class="batch-btn active" onclick="showBatch(1)" data-batch="1">
+      <span>Batch 1</span>
+      <span class="batch-count">1</span>
     </button>
   </div>
 
-  <div id="batch-2" class="batch-panel">
+  <div id="batch-1" class="batch-panel">
     <div class="candidates">
       
     <div class="candidate-card">
       <div class="card featured" id="candidate-0">
         <div class="card-top">
           <div class="card-identity">
-            <div class="card-avatar featured-avatar">M</div>
+            <div class="card-avatar featured-avatar">EA</div>
             <div>
-              <div class="card-name">Mario</div>
+              <div class="card-name">Esteban A.</div>
               <div class="card-location">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Brazil &middot; Marketing experience in design industries
+                Colombia &middot; 8+ yrs Content/Marketing
               </div>
               <div class="card-badges">
                 
@@ -286,7 +291,7 @@
         <div class="card-body">
           
           <div class="card-narrative">
-            Mario is the calculated risk worth taking in this batch. His Brazil background gives Mammoth a potential edge for future market expansion. More than meets the eye for a design-build studio looking to scale.
+            Esteban is your cheat code for architecture marketing. He's not just another SEO generalist. He spent 5 years as an architecture journalist, so he gets spatial concepts and design narratives. The Swiss Army knife who can write copy that doesn't sound like AI gibberish.
           </div>
 
           
@@ -299,9 +304,9 @@
                 <div class="exp-line"></div>
               </div>
               <div class="exp-content">
-                <div class="exp-role">SEO &amp; YouTube Strategist</div>
-                <div class="exp-company">SPOTLAB · Digital Marketing Agency &middot; Nov 2025 – Present</div>
-                <div class="exp-highlight">● Led Growth, SEO, and YouTube channels strategy</div>
+                <div class="exp-role">Bet Expert / Senior SEO Content Editor</div>
+                <div class="exp-company">North Star Network (France) &middot; April 2024 – November 2025</div>
+                <div class="exp-highlight">• Led SEO-driven content strategy across Mexican, Argentine, and Colombian markets.</div>
               </div>
             </div>
             <div class="exp-item">
@@ -310,9 +315,9 @@
                 <div class="exp-line"></div>
               </div>
               <div class="exp-content">
-                <div class="exp-role">Senior Copywriter</div>
-                <div class="exp-company">CLINT · SaaS &middot; oct/2024 – jul/2025</div>
-                <div class="exp-highlight">● Owned brand voice, narrative, and content system across Marketing, Sales, and Customer teams</div>
+                <div class="exp-role">Senior Copywriter / Editor – LATAM Market</div>
+                <div class="exp-company">Kafe Rocks (Malta) &middot; October 2021 – March 2024</div>
+                <div class="exp-highlight">• Developed content strategies focused on affiliate growth across LATAM markets.</div>
               </div>
             </div>
             <div class="exp-item">
@@ -321,9 +326,9 @@
                 <div class="exp-line"></div>
               </div>
               <div class="exp-content">
-                <div class="exp-role">Content Manager</div>
-                <div class="exp-company">ZOPU · SaaS &middot; aug/2023 – feb/2024</div>
-                <div class="exp-highlight">● Led LinkedIn and YouTube content strategy, repurposing webinars via StreamYard into Shorts/Reels/TikTok</div>
+                <div class="exp-role">Senior Linguist / Localization Data Curator</div>
+                <div class="exp-company">Welocalize (USA) &middot; March 2020 – Present</div>
+                <div class="exp-highlight">• Created and curated linguistic datasets for AI systems across LATAM and U.S. Spanish-speaking markets.</div>
               </div>
             </div>
             <div class="exp-item">
@@ -332,9 +337,9 @@
                 
               </div>
               <div class="exp-content">
-                <div class="exp-role">Content Manager</div>
-                <div class="exp-company">STLFLIX · 3D-Printing Subscription Service &middot; aug/2022 – jul/2023</div>
-                <div class="exp-highlight">● Established brand positioning and On-Page SEO</div>
+                <div class="exp-role">Journalist &amp; Correspondent – Architecture &amp; Design</div>
+                <div class="exp-company">Revista Proyecto Diseño (Colombia / Argentina) &middot; 2011 – 2016</div>
+                <div class="exp-highlight">• Conducted editorial research, interviews, and long-form writing focused on architecture, design, and urban culture.</div>
               </div>
             </div>
           </div>
@@ -342,8 +347,8 @@
           
           <div class="card-section-title">Platforms &amp; Tools</div>
           <div class="tags-cluster">
-            <span class="ctag ctag-key">Marketing</span><span class="ctag ctag-key">Design Industry Knowledge</span><span class="ctag ctag-key">Portuguese/English</span><span class="ctag ctag-key">Project Marketing</span>
-            
+            <span class="ctag ctag-key">SEO Strategy</span><span class="ctag ctag-key">Architecture Journalism</span><span class="ctag ctag-key">Content Operations</span><span class="ctag ctag-key">Keyword Research</span><span class="ctag ctag-key">LATAM Markets</span>
+            <span class="ctag">AI Content Curation</span>
           </div>
 
           
@@ -351,13 +356,13 @@
           <div class="fit-grid">
             
             <div class="fit-item">
-              <div class="fit-label">Brazil design industry experience → Understands renovation project cycles and client expectations like Mammoth's</div>
+              <div class="fit-label">Architecture journalist for 5 years → Understands spatial concepts, renovation projects, design language natively</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">Bilingual Portuguese/English → Opens doors for Mammoth's potential Latin American expansion</div>
+              <div class="fit-label">SEO content strategy across LATAM markets → Can handle Squarespace updates and keyword optimization without hand-holding</div>
             </div>
             <div class="fit-item">
-              <div class="fit-label">Design-build industry knowledge → Gets the thoughtful design meets craftsmanship positioning immediately</div>
+              <div class="fit-label">Senior Editor managing multi-market content operations → Independent doer who follows directions rather than redefining strategy</div>
             </div>
           </div>
 
@@ -366,180 +371,33 @@
           <div class="strength-bars">
             
             <div class="bar-item">
-              <div class="bar-label">Marketing Strategy</div>
-              <div class="bar-track"><div class="bar-fill" style="width:75%"></div></div>
-            </div>
-            <div class="bar-item">
-              <div class="bar-label">Design Industry Knowledge</div>
-              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
-            </div>
-            <div class="bar-item">
-              <div class="bar-label">Content Marketing</div>
-              <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
-            </div>
-            <div class="bar-item">
-              <div class="bar-label">Project Marketing</div>
-              <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
-            </div>
-            <div class="bar-item">
-              <div class="bar-label">Cross-cultural Communication</div>
-              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
-            </div>
-            <div class="bar-item">
-              <div class="bar-label">Digital Marketing</div>
-              <div class="bar-track"><div class="bar-fill" style="width:65%"></div></div>
-            </div>
-          </div>
-
-          <div class="card-actions">
-            <a class="video-intro-btn" href="https://drive.google.com/file/d/18D9LSYWjd3QBMaonIRhbHDcgVpBFFuFO/view?usp=drive_link" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
-            
-            
-          </div>
-        </div>
-
-        
-        <div class="card-footer">
-          <div class="card-recruiter-note">
-            <div class="recruiter-note-title">Recruiter Note</div>
-            <p>Mario brings an interesting profile to this batch - someone who understands both marketing fundamentals and the design-build industry dynamics. His Brazil location could be strategic for Mammoth's long-term growth, especially given the design talent pool there. Without seeing his full resume details, I'm betting on cultural fit and industry understanding over pure marketing credentials. The trade-off is clear: you're getting someone who gets the renovation business but might need some ramp-up on specific marketing tools. At $3,500/month, it's a wallet-friendly way to test if international talent can scale Mammoth's marketing efforts.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="candidate-card">
-      <div class="card" id="candidate-1">
-        <div class="card-top">
-          <div class="card-identity">
-            <div class="card-avatar">M</div>
-            <div>
-              <div class="card-name">Millie</div>
-              <div class="card-location">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Honduras &middot; 6 yrs Marketing + Education
-              </div>
-              <div class="card-badges">
-                
-                
-              </div>
-            </div>
-          </div>
-          <div class="card-rate">
-            <div class="card-rate-amount">$3,500/mo</div>
-            <div class="card-rate-period">USD / Month</div>
-          </div>
-        </div>
-
-        <div class="card-body">
-          
-          <div class="card-narrative">
-            Millie is the scrappy force multiplier in this batch. Education background means she knows how to break down complex renovations for clients. Six years in marketing plus AI fluency gives Mammoth a content machine that can educate prospects through the design-build process.
-          </div>
-
-          
-          <div class="card-section-title">Experience Highlights</div>
-          <div class="experience-list">
-            
-            <div class="exp-item">
-              <div class="exp-dot-col">
-                <div class="exp-dot"></div>
-                <div class="exp-line"></div>
-              </div>
-              <div class="exp-content">
-                <div class="exp-role">Marketing Manager</div>
-                <div class="exp-company">Whitelabel IT Solutions &middot; 2019 - Present</div>
-                <div class="exp-highlight">• Design and execute multi-platform digital campaigns.</div>
-              </div>
-            </div>
-            <div class="exp-item">
-              <div class="exp-dot-col">
-                <div class="exp-dot"></div>
-                <div class="exp-line"></div>
-              </div>
-              <div class="exp-content">
-                <div class="exp-role">Copywriter</div>
-                <div class="exp-company">Whitelabel IT Solutions &middot; 2018 - 2019</div>
-                <div class="exp-highlight">• Produced high-impact marketing content for websites and advertising materials.</div>
-              </div>
-            </div>
-            <div class="exp-item">
-              <div class="exp-dot-col">
-                <div class="exp-dot"></div>
-                <div class="exp-line"></div>
-              </div>
-              <div class="exp-content">
-                <div class="exp-role">Freelance Content Creator</div>
-                <div class="exp-company">Various Clients &middot; 2022 - Present</div>
-                <div class="exp-highlight">• Drafted and edited SEO blog posts, newsletters, and marketing collateral for small businesses and educational organizations.</div>
-              </div>
-            </div>
-            <div class="exp-item">
-              <div class="exp-dot-col">
-                <div class="exp-dot"></div>
-                
-              </div>
-              <div class="exp-content">
-                <div class="exp-role">English Teacher (Adults)</div>
-                <div class="exp-company">World Connect Academy &middot; 2024 - Present</div>
-                <div class="exp-highlight">• Instructed beginner learners with tailored lesson plans.</div>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="card-section-title">Platforms &amp; Tools</div>
-          <div class="tags-cluster">
-            <span class="ctag ctag-key">Google Ads</span><span class="ctag ctag-key">Meta Ads</span><span class="ctag ctag-key">SEO</span><span class="ctag ctag-key">Mailchimp</span><span class="ctag ctag-key">ChatGPT</span>
-            <span class="ctag">Canva</span><span class="ctag">Content Creation</span>
-          </div>
-
-          
-          <div class="card-section-title">Mammoth Built Fit Indicators</div>
-          <div class="fit-grid">
-            
-            <div class="fit-item">
-              <div class="fit-label">6 years managing multi-platform campaigns → Mammoth needs integrated marketing across Manhattan/Brooklyn markets</div>
-            </div>
-            <div class="fit-item">
-              <div class="fit-label">Principal + teacher background → Can explain complex renovation processes to anxious co-op owners</div>
-            </div>
-            <div class="fit-item">
-              <div class="fit-label">AI content tools + freelance clients → Can scale educational content without expanding team</div>
-            </div>
-          </div>
-
-          
-          <div class="card-section-title">Strength Profile</div>
-          <div class="strength-bars">
-            
-            <div class="bar-item">
-              <div class="bar-label">Digital Advertising</div>
-              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+              <div class="bar-label">SEO Strategy</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
             </div>
             <div class="bar-item">
               <div class="bar-label">Content Creation</div>
-              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">Client Education</div>
+              <div class="bar-label">Architecture Industry Knowledge</div>
               <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">SEO</div>
-              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+              <div class="bar-label">Independent Execution</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">Campaign Management</div>
-              <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+              <div class="bar-label">Quality Control</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
             </div>
             <div class="bar-item">
-              <div class="bar-label">AI Tools</div>
-              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+              <div class="bar-label">Market Localization</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
             </div>
           </div>
 
           <div class="card-actions">
-            <a class="video-intro-btn" href="https://drive.google.com/file/d/17po5vZvKRDiC57o1tgjO_ty9349J-nDB/view?usp=drive_link" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            <a class="video-intro-btn" href="https://drive.google.com/file/d/1tFsurV9FlLE8DfoGoSbknRpbDZMmyOEH/view?usp=drive_link" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
             
             
           </div>
@@ -549,7 +407,7 @@
         <div class="card-footer">
           <div class="card-recruiter-note">
             <div class="recruiter-note-title">Recruiter Note</div>
-            <p>Millie brings something unique to this batch: the ability to translate complex processes into client-friendly content. Her 6 years at Whitelabel IT Solutions managing multi-platform campaigns directly applies to Mammoth's need to educate Manhattan/Brooklyn clients through renovation decisions. The education background is her secret weapon. She spent years making complicated subjects digestible for students, now she can do the same for nervous co-op board approvals and renovation timelines. Her AI tool fluency means she can scale content production without scaling headcount. Trade-off: less pure B2B marketing experience, but her client education skills could be exactly what a design-build studio needs.</p>
+            <p>Esteban brings something rare: deep architecture editorial background plus modern SEO execution. His 5 years covering design projects at Revista Proyecto Diseño means he actually understands brownstones, co-ops, and renovation challenges. Not someone you'll need to educate about spatial concepts or design language. His recent North Star Network role shows he can scale content operations across multiple markets while monitoring keyword performance and SERP visibility. The Welocalize AI curation work demonstrates data precision and quality control mindset. At $3,500, you're getting senior-level execution with genuine industry knowledge. The calculated risk worth taking over generic marketing generalists.</p>
           </div>
         </div>
       </div>
@@ -566,18 +424,18 @@
         <thead>
           <tr>
             <th>Criteria</th>
-            <th>Mario</th><th>Millie</th>
+            <th>Esteban A.</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td><strong>Location</strong></td><td>Brazil</td><td>Honduras</td></tr>
-          <tr><td><strong>Experience</strong></td><td>Marketing experience in design industries</td><td>6 yrs Marketing + Education</td></tr>
-          <tr><td><strong>Key Employers</strong></td><td>SPOTLAB · Digital Marketing Agency, CLINT · SaaS, ZOPU · SaaS</td><td>Whitelabel IT Solutions, Various Clients, World Connect Academy</td></tr>
-          <tr><td><strong>Core Strength</strong></td><td>Marketing, Design Industry Knowledge, Portuguese/English</td><td>Google Ads, Meta Ads, SEO</td></tr>
-          <tr><td><strong>HRIS / Tools</strong></td><td>Marketing, Design Industry Knowledge, Portuguese/English, Project Marketing</td><td>Google Ads, Meta Ads, SEO, Mailchimp, ChatGPT</td></tr>
-          <tr><td><strong>Languages</strong></td><td>English, Spanish, Portuguese</td><td>Spanish, English</td></tr>
-          <tr><td><strong>Education</strong></td><td>MBA, Marketing, Advertising &amp; Brand Image (WMBA); BA, Advertising (UNISOCIESC)</td><td>Bachelor's Degree in Architecture (Universidad Católica de Honduras); Education (Universidad Pedagógica Francisco Morazán)</td></tr>
-          <tr><td><strong>Rate</strong></td><td class="highlight-cell">$3,500/mo</td><td class="highlight-cell">$3,500/mo</td></tr>
+          <tr><td><strong>Location</strong></td><td>Colombia</td></tr>
+          <tr><td><strong>Experience</strong></td><td>8+ yrs Content/Marketing</td></tr>
+          <tr><td><strong>Key Employers</strong></td><td>North Star Network (France), Kafe Rocks (Malta), Welocalize (USA)</td></tr>
+          <tr><td><strong>Core Strength</strong></td><td>SEO Strategy, Architecture Journalism, Content Operations</td></tr>
+          <tr><td><strong>HRIS / Tools</strong></td><td>SEO Strategy, Architecture Journalism, Content Operations, Keyword Research, LATAM Markets</td></tr>
+          <tr><td><strong>Languages</strong></td><td>Spanish, English, French</td></tr>
+          <tr><td><strong>Education</strong></td><td>Master's Degree in Architecture History &amp; Criticism (Universidad de Buenos Aires); Bachelor's Degree in Social Communication (Journalism) (Universidad Central)</td></tr>
+          <tr><td><strong>Rate</strong></td><td>$3,500/mo</td></tr>
           
         </tbody>
       </table>
